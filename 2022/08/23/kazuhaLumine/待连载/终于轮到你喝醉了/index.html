@@ -26,7 +26,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="终于轮到你喝醉了">
 <meta property="og:url" content="https://baiyuyuyuu.github.io/2022/08/23/kazuhaLumine/%E5%BE%85%E8%BF%9E%E8%BD%BD/%E7%BB%88%E4%BA%8E%E8%BD%AE%E5%88%B0%E4%BD%A0%E5%96%9D%E9%86%89%E4%BA%86/index.html">
-<meta property="og:site_name" content="Kazuh_Wite">
+<meta property="og:site_name" content="Wite_Blog">
 <meta property="og:description" content="原名：【叶荧】烟云笼月 ————————————————- “听说了吗，酒馆最近开发了新饮品，果汁也能当酒喝啦！” “什么！也就是说以后喝酒再也不用躲躲藏藏了被老婆发现了？！迪卢克老爷万岁！”一酒客站在天使的馈赠门口和另一过路提包买菜准备回家的过路人聊得火热，“你有试过那个新饮品吗？贵吗？” “酸酸甜甜的，果香气还夹杂着酒的微醺，没有什么苦涩的口感，一级棒！而且价格超级平民…只不过…” “只不过什">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-08-23T06:05:01.000Z">
@@ -44,7 +44,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://baiyuyuyuu.github.io/2022/08/23/kazuhaLumine/%E5%BE%85%E8%BF%9E%E8%BD%BD/%E7%BB%88%E4%BA%8E%E8%BD%AE%E5%88%B0%E4%BD%A0%E5%96%9D%E9%86%89%E4%BA%86/","path":"2022/08/23/kazuhaLumine/待连载/终于轮到你喝醉了/","title":"终于轮到你喝醉了"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>终于轮到你喝醉了 | Kazuh_Wite</title>
+<title>终于轮到你喝醉了 | Wite_Blog</title>
   
 
 
@@ -75,7 +75,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">Kazuh_Wite</p>
+      <p class="site-title">Wite_Blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">KazuhLumin</p>
@@ -202,12 +202,12 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Kazuh_Wite">
+      <meta itemprop="name" content="Wite_Blog">
       <meta itemprop="description" content="One day, he finally admitted that the girl he loved was Lumine">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="终于轮到你喝醉了 | Kazuh_Wite">
+      <meta itemprop="name" content="终于轮到你喝醉了 | Wite_Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -452,5 +452,82 @@
 
 
 
-</body>
+  
+<style>
+#selectionCopyright {
+    position: absolute;
+    display: none;
+    background: rgba(244,67,54,.7);
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: none;
+    border: none;
+    font-size: 14px;
+}
+#selectionCopyright a{
+    color:#fff;
+    border-color: #fff;
+}
+#selectionCopyright::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent rgba(244,67,54,.7) transparent transparent;
+    position: absolute;
+    left: -8px;
+    top:50%;
+    transform:translateY(-50%);
+}
+</style>
+
+<button id="selectionCopyright" disabled="disabled">本文发表于 [<a href="https://baiyuyuyuu.github.io/">白与渔与虞的博客</a>] 分享记得注明来源哟</button>
+
+<script>
+window.onload = function() {
+    function selectText() {
+        if (document.selection) { //IE浏览器下
+            return document.selection.createRange().text; //返回选中的文字
+        } else { //非IE浏览器下
+            return window.getSelection().toString(); //返回选中的文字
+        }
+    }
+    var content = document.getElementsByTagName("body")[0];
+    var scTip = document.getElementById('selectionCopyright');
+
+    content.onmouseup = function(ev) { //设定一个onmouseup事件
+        var ev = ev || window.event;
+        var left = ev.clientX;//获取鼠标相对浏览器可视区域左上角水平距离距离
+        var top = ev.clientY;//获取鼠标相对浏览器可视区域左上角垂直距离距离
+        var xScroll = Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);//获取文档水平滚动距离
+        var yScroll = Math.max(document.body.scrollTop, document.documentElement.scrollTop);//获取文档垂直滚动距离
+        if (selectText().length > 0) {
+            setTimeout(function() { //设定一个定时器
+                scTip.style.display = 'inline-block';
+                scTip.style.left = left + xScroll + 15 + 'px';//鼠标当前x值
+                scTip.style.top = top + yScroll - 15 + 'px';//鼠标当前y值
+            }, 100);
+        } else {
+            scTip.style.display = 'none';
+        }
+    };
+
+    content.onclick = function(ev) {
+        var ev = ev || window.event;
+        ev.cancelBubble = true;
+    };
+    document.onclick = function() {
+        scTip.style.display = 'none';
+    };
+};
+</script>
+
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>
