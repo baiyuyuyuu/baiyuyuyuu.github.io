@@ -8,7 +8,7 @@
       <link href="/2022/10/05/photo/"/>
       <url>/2022/10/05/photo/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![事后清晨](morning.jpg<span class="string">&quot;事后清晨&quot;</span>)</span><br></pre></td></tr></table></figure><p><img src="/2022/10/05/photo/10/05/photo/blog/source_posts\photo\morning.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/2022/10/05/photo/blog\source_posts\photo\morning.jpg" alt="事后清晨"></p>]]></content>
       
       
       <categories>
@@ -35,7 +35,7 @@
       <link href="/2022/10/05/photo/photo/"/>
       <url>/2022/10/05/photo/photo/</url>
       
-        <content type="html"><![CDATA[<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![事后清晨](.<span class="regexp">/photo/m</span>orning.jpg)</span><br></pre></td></tr></table></figure><p><img src="/2022/10/05/photo/photo/10/05/photo/photo/blog/source_posts\photo\morning.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![事后清晨](.<span class="regexp">/photo/m</span>orning.jpg)</span><br></pre></td></tr></table></figure><p><img src="/2022/10/05/photo/photo/blog\source_posts\photo\morning.jpg"></p>]]></content>
       
       
       <categories>
