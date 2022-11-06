@@ -134,6 +134,7 @@
   </div>
 
   <aside class="sidebar">
+	
 
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
@@ -212,6 +213,13 @@
 
         </div>
       </div>
+
+	  <link rel="stylesheet" href="/dist/APlayer.min.css">
+      <div id="aplayer"></div>
+      <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+      <script type="text/javascript" src="/dist/music.js"></script>	
+	  
+
 	  
     </div>
   </aside>
@@ -229,6 +237,7 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
+
 
 
     <div class="main-inner post posts-expand">
@@ -319,7 +328,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="0b484252e65817b83d031423722c6b44f170dba0bee4d6de26bca619a0ea96ff">9f1c536316f6198a360ebb6e9be6df41c3800437b880f0acdae8def386ad5ac0c238cc12fef58ade18e21789f52952f8fbf35a6e21cd61e45bf0cec1a4e28891e302b9ea9a3176be5b4c99ef1b268326aa2bf3bab7be3e30429adf1107bc70efd26cb83c1370f66e778c2c5c06cc57d8f63f2be6844b48aa51994973751c7088326ccb21111b6a540ccd7725a090c0d37f578fa5e94bc30c363c9036e93da4a80f580eb23c7bbfdcdea6080c1f3e0d253d7473b5b62d6f699a564fd668d9794f804ba6af623a7c58d826a7c2a26d5aa462a18e571847b6523b43283d851884cfddd77832baaba03ac7eb167bd397eeca56738562852114168a8c6269f831c9c3c3b910ebbe7afa708243b7ff22ad4397a2f6c06677f4edad13db8a8492fb515c05e43250c745f9783b01781a69ffaf048673b09f1d51f28628501e65e491f858543e0c10c15ccecaaae7f621d9a2ee53cf9a5f9eb181c5dec3f64e6b2de52c5c66ccf882581479fdc63e4ee71baf183596ffcf047e96d27f4c311bd7dbb896ebce4b6378858a3814228893a93abe8aa7d5b19fcafb69861bf10d520a8a0930d12aef8ed8158ddb95db57fcbaf7e979e0</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="2a739028a9988c9fa05887399042f94a8733d8261f1e5ed451e8f252b8a9e2ff">9f1c536316f6198a360ebb6e9be6df41279c6af5b9c8acb5f1988ff9a7611780add4ae17d7c27d0dfe292de2e33dea45000df4ff7502f338c6470022f25d8bb55d04de0c885f05d3c6c1408d79ecef3f100e09c3406ab7d658a3e7ca2e7ece9e539832b96d9ba964a892c0cfad8dd04bede201fbd7d2244c5fdefba0c1dec1076293d38fd9779c29a80c74f5d3ecdfe9287d12c9dec5eeb101562fc47a19ff768a65c94e6bb07ccf5dafe3903ca8353f275a539c27fcda79aff2f23ab5ec5c7a3633df375391e8a7ea460979b8aba6ef75629b294afb749ec3adf098ad3ea1ca8f1cfb905cb8c20d595cbb577b5245a6fa9981e79c41ee67f0d24c6499500d1b7ffdb9b6bdea000a1f298985edab4c2427a58a58e5fcca83633aec3676d852c417bfa2a0ef135569e5b3f50e71412fb010dd4c715ee7b35ac38448a954b430bea6ca75591c06242fe37e4ea641e1f384a5e94e1f9536f5fb14fc806764534d269187c95973654a0486da8b5d15f1cbb9b54e852ca8125332967bd3330e9715cd63e4f361ffa9052d2eaca17b3db07f1a98b07a82c7ee796b0ee02b6c607673d1b038977693b5f1355c9a0570b7b517f4d84f00fc2438ba8af04029415a6b6b2ae91370f403b921557b8521947759c82fc87517baf27fa056b184c2709d8e5fca42f0bf25967236ede541de792ac8b066ca803835057fea60e7c69656be86638b351681ea84a3c1d46f76edcedcc2425d16fb6e19cdffe11c1f54702630e8961e9323cbd3116a53d891eb00c71f14d0a60a1376697c4f6f5bf33a12a58d9e113c784d7f6e1bed0eb25c0f29e5fb92e3c9400f3c118cb861ea70c5bda2f7971574abca111821e27f0981ca78aed94caf2d</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -427,7 +436,8 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
@@ -439,7 +449,7 @@
   <script src="/js/third-party/pace.js"></script>
 
   
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
