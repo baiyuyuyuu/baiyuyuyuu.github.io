@@ -6,7 +6,7 @@ const ap = new APlayer({
     theme: '#FADFA3', //主题色
     fixed: true,
     order: 'list', //音频循环顺序, 可选值: 'list'列表循环, 'random'随机循环
-    preload: 'metadata', //预加载，可选值: 'none', 'metadata', 'auto'
+    preload: 'auto', //预加载，可选值: 'none', 'metadata', 'auto'
     volume: 0.2, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
     mutex: true, //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
     listFolded: true, //列表默认折叠
@@ -153,6 +153,6 @@ const ap = new APlayer({
             artist: '09Wynn',
             url: 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBay1MQzFqaGVSNFhoeldCM3Y1dGhjeld4cXpoP2U9M2tVdm00.mp3',
             cover: 'cover2.jpg',
-        },
+        }
     ]
 });
