@@ -24,12 +24,12 @@ const ap = new APlayer({
             cover: 'cover2.jpg',
         }
 
-        {
-            name: '若梦',
-            artist: '周深',
-            url: 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBay1MQzFqaGVSNFhoeWh6Z3hFN0RKLXAyZVpQP2U9RVpWeTFS.mp3',
-            cover: 'cover2.jpg',
-        }
+        //{
+          //  name: '若梦',
+          //  artist: '周深',
+          //  url: 'https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBay1MQzFqaGVSNFhoeWh6Z3hFN0RKLXAyZVpQP2U9RVpWeTFS.mp3',
+          //  cover: 'cover2.jpg',
+        //}
 		//https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBay1MQzFqaGVSNFhoeWh6Z3hFN0RKLXAyZVpQP2U9RVpWeTFS.mp3
     ]
 });
