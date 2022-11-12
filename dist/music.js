@@ -2,7 +2,7 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
     autoplay: false,
     loop: 'all',
-    listMaxHeight: 60,
+    listMaxHeight: 50,
     theme: '#FADFA3', //主题色
     fixed: true,
     order: 'list', //音频循环顺序, 可选值: 'list'列表循环, 'random'随机循环
